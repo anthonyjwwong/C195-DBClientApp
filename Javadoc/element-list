@@ -1,0 +1,6 @@
+module:wgu.dbclientapp
+wgu.dbclientapp
+wgu.dbclientapp.controller
+wgu.dbclientapp.model
+wgu.dbclientapp.sqlQuery
+wgu.dbclientapp.util

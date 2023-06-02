@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"wgu.dbclientapp","l":"wgu.dbclientapp"},{"m":"wgu.dbclientapp","l":"wgu.dbclientapp.controller"},{"m":"wgu.dbclientapp","l":"wgu.dbclientapp.model"},{"m":"wgu.dbclientapp","l":"wgu.dbclientapp.sqlQuery"},{"m":"wgu.dbclientapp","l":"wgu.dbclientapp.util"}];updateSearchResults();

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="659.0" prefWidth="984.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wgu.dbclientapp.controller.reportsController">
+   <children>
+      <Label layoutX="42.0" layoutY="34.0" text="Reports">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TableView fx:id="monthTable" layoutX="42.0" layoutY="93.0" prefHeight="237.0" prefWidth="432.0">
+        <columns>
+          <TableColumn fx:id="mMonth" prefWidth="118.0" text="Month" />
+          <TableColumn fx:id="mType" prefWidth="138.0" text="Type" />
+            <TableColumn fx:id="mNumOfAppoints" prefWidth="175.0" text="Number of Appointments" />
+        </columns>
+      </TableView>
+      <TableView fx:id="contactTable" layoutX="42.0" layoutY="372.0" prefHeight="223.0" prefWidth="905.0">
+         <columns>
+            <TableColumn fx:id="cId" prefWidth="44.0" text="Id" />
+            <TableColumn fx:id="cTitle" prefWidth="72.0" text="title" />
+            <TableColumn fx:id="cDescription" prefWidth="99.0" text="description" />
+            <TableColumn fx:id="cLocation" prefWidth="103.0" text="location" />
+            <TableColumn fx:id="cContact" prefWidth="108.0" text="contact " />
+            <TableColumn fx:id="cType" prefWidth="93.0" text="type" />
+            <TableColumn fx:id="cStart" prefWidth="115.0" text="start" />
+            <TableColumn fx:id="cEnd" prefWidth="111.0" text="end" />
+            <TableColumn fx:id="cCustomerId" prefWidth="84.0" text="customer id" />
+            <TableColumn fx:id="cUserId" prefWidth="75.0" text="user id" />
+         </columns>
+      </TableView>
+      <ComboBox fx:id="dbMonth" layoutX="42.0" layoutY="68.0" onAction="#selectedMonth" prefWidth="150.0" />
+      <ComboBox fx:id="dbContact" layoutX="42.0" layoutY="347.0" onAction="#selectedContact" prefWidth="150.0" />
+      <Button fx:id="customerButton" layoutX="654.0" layoutY="62.0" mnemonicParsing="false" onAction="#toCustomerPage" prefHeight="25.0" prefWidth="140.0" text="Customers" />
+      <Button fx:id="appointmentButton" layoutX="807.0" layoutY="62.0" mnemonicParsing="false" onAction="#toAppointmentPage" prefHeight="25.0" prefWidth="140.0" text="Appointments" />
+      <TableView fx:id="locationTable" layoutX="515.0" layoutY="93.0" prefHeight="237.0" prefWidth="432.0">
+         <columns>
+            <TableColumn fx:id="lLocation" prefWidth="214.0" text="Location" />
+            <TableColumn fx:id="lDate" prefWidth="217.0" text="Date" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
